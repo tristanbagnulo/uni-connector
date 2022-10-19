@@ -21,7 +21,7 @@ let modify = function () {
     Returnvalues: 'UPDATED_NEW',
   };
 
-  docClient.get(params, function (err, data) {
+  docClient.update(params, function (err, data) {
     if (err) {
       console.log('User::update::error - ' + JSON.stringify(err, null, 2));
     } else {
